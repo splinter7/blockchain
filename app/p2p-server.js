@@ -2,7 +2,6 @@ const Websocket = require('ws');
 
 const P2P_PORT = process.env.P2P_PORT || 5001;
 const peers = process.env.PEERS ? process.env.PEERS.split(',') : [];
-
 class P2pServer {
   constructor(blockchain) {
     this.blockchain = blockchain;
@@ -19,12 +18,11 @@ class P2pServer {
   }
 
   connectToPeers() {
-    peers.forEach()
+    peers.forEach();
   }
 
   connectSocket(socket) {
     this.sockets.push(socket);
-    console.log('Socket connected')
+    console.log('Socket connected');
   }
 }
-
