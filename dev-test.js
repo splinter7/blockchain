@@ -5,7 +5,7 @@
 //   console.log(bc.addBlock(`foo ${i}`).toString())
 // }
 
-const Wallet = require('./wallet/wallet');
+const Wallet = require('./wallet');
 
 const wallet = new Wallet();
 console.log(wallet.toString());
