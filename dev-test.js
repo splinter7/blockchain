@@ -1,9 +1,6 @@
-const Block = require('./block');
+const Blockchain = require("./blockchian");
+const bc = new Blockchain();
 
-const args = {
-  lastBlock: Block.genesis(),
-  data: "foo"
+for(let i = 0; i < 10; i++){
+  console.log(bc.addBlock(`foo ${i}`).toString())
 }
-
-const fooBlock = Block.mineBlock(args);
-console.log(fooBlock.toString());
