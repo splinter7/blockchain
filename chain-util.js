@@ -1,4 +1,4 @@
-const EC = reqiure('elliptic').ec
+const EC = require('elliptic').ec
 const ec = new EC("secp256k1")
 
 class ChainUtil {
